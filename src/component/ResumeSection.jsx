@@ -1,15 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import resumePDF from "../../public/Jethanand.pdf"; // Make sure to have your resume.pdf in the assets folder
+import resumePDF from "../../public/Jethanand.pdf";
+
 const ResumeSection = () => {
   return (
     <section
       id="resume"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-16 bg-gray-50 dark:bg-gray-900"
+      className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 "
     >
       {/* Heading */}
       <motion.h2
-        className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-12 text-center"
+        className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-8 sm:mb-12 text-center"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -18,16 +19,18 @@ const ResumeSection = () => {
       </motion.h2>
 
       {/* Resume Grid */}
-      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl w-full">
         {/* Education */}
         <motion.div
-          className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition"
+          className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-2xl font-semibold text-blue-600 mb-4">Education</h3>
-          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+          <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
+            Education
+          </h3>
+          <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
             <li>BSCS – BBSUL University</li>
             <li>Web Development Course – SMIT</li>
             <li>Intermediate – Govt. College</li>
@@ -37,13 +40,15 @@ const ResumeSection = () => {
 
         {/* Design Skills */}
         <motion.div
-          className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition"
+          className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <h3 className="text-2xl font-semibold text-blue-600 mb-4">Design Skills</h3>
-          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+          <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
+            Design Skills
+          </h3>
+          <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
             <li>UI/UX Design</li>
             <li>Responsive Web Design</li>
             <li>Adobe Photoshop & Canva</li>
@@ -53,13 +58,15 @@ const ResumeSection = () => {
 
         {/* Experience */}
         <motion.div
-          className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition"
+          className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="text-2xl font-semibold text-blue-600 mb-4">Experience</h3>
-          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+          <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
+            Experience
+          </h3>
+          <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
             <li>Frontend Developer Intern – Remote Projects</li>
             <li>Personal portfolio projects (React, Vite, Tailwind)</li>
             <li>E-commerce Website Development</li>
@@ -69,13 +76,15 @@ const ResumeSection = () => {
 
         {/* Coding Skills */}
         <motion.div
-          className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition"
+          className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <h3 className="text-2xl font-semibold text-blue-600 mb-4">Coding Skills</h3>
-          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+          <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
+            Coding Skills
+          </h3>
+          <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
             <li>HTML, CSS, JavaScript</li>
             <li>React.js & Vite</li>
             <li>Firebase & MongoDB (basic)</li>
@@ -86,9 +95,9 @@ const ResumeSection = () => {
 
       {/* Resume Download */}
       <motion.a
-        href={resumePDF} // ✅ Make sure resume.pdf is in the public folder
+        href={resumePDF}
         download
-        className="mt-12 px-8 py-4 bg-blue-600 text-white font-semibold rounded-2xl shadow-lg hover:bg-blue-700 hover:shadow-2xl transition transform hover:scale-105"
+        className="mt-8 sm:mt-12 px-6 sm:px-8 py-3 sm:py-4 sm:mb-10 bg-blue-600 text-white text-sm sm:text-base font-semibold rounded-xl shadow-lg hover:bg-blue-700 hover:shadow-2xl transition"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
