@@ -17,6 +17,7 @@ import {
   SiPostman,
   SiTailwindcss,
   SiVercel,
+  SiNextdotjs,
 } from "react-icons/si";
 
 const AboutSection = () => {
@@ -73,6 +74,7 @@ const AboutSection = () => {
             <FaCss3Alt className="text-blue-500" title="CSS3" />
             <FaJs className="text-yellow-400" title="JavaScript" />
             <FaReact className="text-cyan-400" title="React.js" />
+            <SiNextdotjs className="text-black dark:text-white" title="Next.js" />
             <SiTailwindcss className="text-sky-500" title="Tailwind CSS" />
             {/* Backend */}
             <FaNodeJs className="text-green-600" title="Node.js" />
