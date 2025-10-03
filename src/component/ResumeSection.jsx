@@ -54,10 +54,12 @@ const ResumeSection = () => {
         >
           <h3 className="text-2xl font-semibold text-blue-600 mb-4">Experience</h3>
           <ul className="space-y-3 text-gray-700 dark:text-gray-300 text-base">
-            <li>Full Stack Developer Intern – Remote Projects</li>
+            <li>Full Stack Developer Projects</li>
             <li>Academic Project: <span className="font-medium">APIverse</span></li>
             <li>E-commerce App (React + Firebase)</li>
-            <li>Open Source Contributions & Freelance Work</li>
+          
+            <li>Personal Projects & Continuous Learning</li>
+
           </ul>
         </motion.div>
 
