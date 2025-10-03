@@ -6,7 +6,7 @@ import {
 
 const ContactSection = () => {
   return (
-    <section className="p-6 sm:p-12 min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <section className="p-6 sm:p-12 min-h-screen   text-white">
       {/* Heading */}
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-400 mb-4">
