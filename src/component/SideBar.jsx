@@ -18,7 +18,7 @@ const SideBar = ({ setActiveSection }) => {
         Jethanand Malhi
       </h2>
       <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-        Frontend Developer
+        Fullstack Developer
       </p>
 
       {/* Social Links */}
