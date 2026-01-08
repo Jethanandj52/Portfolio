@@ -14,8 +14,17 @@ import fastfood from "../assets/image/fast-food.png";
 import periodic from "../assets/image/periodic.png";
 import loan from "../assets/image/loan.png";
 import offmenu from "../assets/image/offmenu.png";
+import task from "../assets/image/task.png";
+import blog from "../assets/image/blog.png";
+
+
+
+
 
 const projects = [
+  { title: "Task Hive ", description: "Task Managment and Collaboration website. Full Stack Project ", image: task, link: "https://task-hive-entrovex.vercel.app/" },
+  { title: "Blog Website", description: "Blog website. Full Stack Project", image: blog, link: "https://belog-frontend.vercel.app/home" },
+
   { title: "Saylani Website Clone", description: "A clone of Saylani website using HTML, CSS, and JS.", image: smit, link: "https://jethanandj52.github.io/Saylani_website_clone/" },
   { title: "Offmenu Website Clone", description: "A clone of Offmenu website using HTML, CSS, and JS.", image: offmenu, link: "https://offmenu-clone.netlify.app/" },
   { title: "Food Panda Clone", description: "Food delivery website clone built with frontend technologies.", image: food, link: "https://food-panda-clone-assignment.netlify.app/" },
@@ -30,6 +39,7 @@ const projects = [
   { title: "Time Table", description: "Time table app built with frontend technologies.", image: periodic, link: "https://effulgent-blini-5cc036.netlify.app/" },
   { title: "Loan App", description: "Frontend React + Backend project with Firebase.", image: loan, link: "https://github.com/Jethanandj52/LoanApp" },
   { title: "Portfolio Website", description: "Personal portfolio built with React, Tailwind, and Framer Motion.", image: portfolio, link: "https://portfolio-6a6y.vercel.app/" },
+
 ];
 
 const PortfolioSection = () => {
