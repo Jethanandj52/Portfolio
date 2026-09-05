@@ -150,7 +150,7 @@ export default function Hero({ t }) {
       </div>
 
       {/* Visual */}
-      <div className="relative flex min-h-[380px] items-center justify-center sm:min-h-[460px] md:min-h-[380px]">
+      <div className="relative flex min-h-[460px] items-center justify-center sm:min-h-[460px] md:min-h-[380px]">
 
         {/* Main Avatar */}
         <div className="animate-float flex h-[220px] w-[220px] items-center justify-center rounded-full bg-gradient-to-br from-blue-500 via-violet-500 to-pink-500 p-1.5 shadow-[0_0_60px_rgba(139,92,246,0.35)] sm:h-[300px] sm:w-[300px]">
@@ -163,7 +163,7 @@ export default function Hero({ t }) {
 
         {/* Floating code card */}
         <div
-          className={`animate-float-slow absolute right-[-4%] top-[4%] w-[180px] rounded-xl border ${t.border} ${t.panelBg} p-3.5 shadow-2xl sm:w-[220px]`}
+          className={`animate-float-slow absolute right-0 top-0 z-20 w-[180px] rounded-xl border ${t.border} ${t.panelBg} p-3.5 shadow-2xl sm:right-[-4%] sm:top-[4%] sm:w-[220px]`}
         >
           <div className="mb-2.5 flex gap-1.5">
             <span className="inline-block h-2 w-2 rounded-full bg-[#ff5f56]" />

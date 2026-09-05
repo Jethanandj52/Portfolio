@@ -17,7 +17,7 @@ export default function Navbar({ theme, setTheme, t }) {
             {INITIALS}
           </span>
           <span className="flex flex-col text-[15px] font-bold leading-tight">
-            DevPort
+           Portfolio
             <small className={`text-[10.5px] font-medium ${t.textFaint}`}>Developer &amp; Designer</small>
           </span>
         </a>
