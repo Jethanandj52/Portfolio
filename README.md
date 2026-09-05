@@ -1,16 +1,61 @@
-# React + Vite
+# MERN Developer Portfolio (React + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page portfolio built with React, Vite and Tailwind CSS v4,
+split into one component per section.
 
-Currently, two official plugins are available:
+## Run it locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Then open the URL Vite prints (usually http://localhost:5173).
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Build for production
 
-## Expanding the ESLint configuration
+```bash
+npm run build
+npm run preview
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The production build is written to the `dist/` folder — deploy that
+folder to Vercel, Netlify, GitHub Pages, or any static host.
+
+## Project structure
+
+```
+src/
+├── App.jsx                 – composes all sections + theme state
+├── data.js                 – EDIT ME: your name, links, projects, etc.
+├── theme.js                – dark/light Tailwind class tokens
+├── index.css                – Tailwind import + fonts
+└── components/
+    ├── Navbar.jsx
+    ├── Hero.jsx
+    ├── About.jsx
+    ├── Services.jsx
+    ├── Projects.jsx
+    ├── Testimonials.jsx
+    ├── Contact.jsx
+    ├── Footer.jsx
+    ├── SectionHead.jsx      – shared "eyebrow + heading" block
+    ├── GlowBackground.jsx   – decorative gradient blobs
+    └── Icons.jsx            – all inline SVG icons + placeholder Avatar
+```
+
+## Where to edit your info
+
+Everything content-related lives in **`src/data.js`**:
+`NAME`, `INITIALS`, `TAGLINE`, `ROLES`, `EMAIL`, `SOCIALS`, `TECH`,
+`SERVICES`, `PROJECTS`, `TESTIMONIALS`.
+
+`Avatar()` in `src/components/Icons.jsx` is a placeholder illustration —
+replace its usage in `Hero.jsx` with a real `<img src="/your-photo.jpg" />`
+once you have a photo (put the image file in the `public/` folder).
+
+## Styling
+
+This project uses Tailwind CSS v4 via `@tailwindcss/vite` — no
+`tailwind.config.js` or PostCSS setup needed. Custom fonts and the
+blinking-cursor animation are defined in `src/index.css`.
