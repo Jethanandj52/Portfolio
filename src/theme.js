@@ -4,7 +4,7 @@
  * so each component stays theme-aware without repeating logic.
  */
 export function getThemeTokens(theme) {
-  const isDark = theme === "dark";
+  const isDark = theme === "light";
 
   return {
     isDark,
